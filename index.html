@@ -4,47 +4,48 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>White Development</title>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__line">
-          <a class="page-header__logo" href="index.html">
+          <a class="page-header__logo logo" href="index.html">
             <img src="img/logo-pic.svg" width="203" height="49" alt="Логотип компании White Development">
           </a>
 
           <div class="page-header__contacts">
             <ul class="page-header__contacts-list">
               <li class="page-header__contacts-item">
-                <a class="page-header__contacts-link" href="#">
+                <a class="page-header__contacts-link social-link" href="#">
                   <img src="img/logo-inst.svg" width="56" height="56" alt=" Ссылка на Инстаграм">
-                  <p class="page-header__contacts-upper-name">Instagram</p>
-                  <p class="page-header__contacts-lower-name">Перейти в профиль</p>
+                  <p class="page-header__contacts-upper-name upper-name">Instagram</p>
+                  <p class="page-header__contacts-lower-name lower-name">Перейти в профиль</p>
                 </a>
               </li>
 
               <li class="page-header__contacts-item">
-                <a class="page-header__contacts-link" href="#">
+                <a class="page-header__contacts-link social-link" href="#">
                   <img src="img/logo-whatsapp.svg" width="56" height="56" alt=" Ссылка на Вотсапп">
-                  <p class="page-header__contacts-upper-name">WhatsApp</p>
-                  <p class="page-header__contacts-lower-name">Написать в мессенджер</p>
+                  <p class="page-header__contacts-upper-name upper-name">WhatsApp</p>
+                  <p class="page-header__contacts-lower-name lower-name">Написать в мессенджер</p>
                 </a>
               </li>
 
               <li class="page-header__contacts-item">
-                <a class="page-header__contacts-link" href="#">
+                <a class="page-header__contacts-link social-link" href="#">
                   <img src="img/logo-telegram.svg" width="56" height="56" alt=" Ссылка на Телеграм">
-                  <p class="page-header__contacts-upper-name">Telegram</p>
-                  <p class="page-header__contacts-lower-name">Написать в мессенджер</p>
+                  <p class="page-header__contacts-upper-name upper-name">Telegram</p>
+                  <p class="page-header__contacts-lower-name lower-name">Написать в мессенджер</p>
                 </a>
               </li>
 
               <li class="page-header__contacts-item">
-                <a class="page-header__contacts-link" width="56" height="56" href="tel: +7(423)2919990">
+                <a class="page-header__contacts-link social-link" width="56" height="56" href="tel: +7(423)2919990">
                   <img src="img/logo-phone.svg" alt=" Ссылка на номер телефона">
-                  <p class="page-header__contacts-upper-name">+7 (423) 291-99-90</p>
-                  <p class="page-header__contacts-lower-name">Без выходных · с 10:00 до 19:00</p>
+                  <p class="page-header__contacts-upper-name upper-name">+7 (423) 291-99-90</p>
+                  <p class="page-header__contacts-lower-name lower-name">Без выходных · с 10:00 до 19:00</p>
                 </a>
               </li>
             </ul>
@@ -145,6 +146,10 @@
 
       <section class="bank-partners-block">
         <div class="bank-partners-block__wrapper">
+          <div>
+            <!-- контейнер для анимированных логотипов банков -->
+          </div>
+
           <div class="bank-partners-block__info">
             <h2 class="bank-partners-block__info-title block-title">Банки-партнёры</h2>
             <p class="bank-partners-block__info-desc-upper"><span>Сотрудничаем почти со всеми банками Владивостока</span>. Среди них такие, как: Сбербанк, ВТБ, АТБ, Банк Приморье, Совкомбанк и другие.</p>
@@ -198,7 +203,110 @@
     </main>
 
     <footer class="page-footer">
+      <div class="page-footer__container">
+        <div class="page-footer__container-logo-info column">
+          <a class="page-footer__container-logo" href="index.html">
+            <img src="img/logo-pic.svg" width="260" height="63" alt="Логотип компании White Development">
+          </a>
+          <p class="page-footer__container-info">Консультация и продажа квартир в новостройках Владивостока</p>
+        </div>
 
+        <ul class="page-footer__container-list-first column">
+          <li class="page-footer__container-item">
+            <a class="page-footer__container-link" href="#">
+              О нас
+            </a>
+          </li>
+
+          <li class="page-footer__container-item">
+            <a class="page-footer__container-link" href="#">
+              Каталог ЖК
+            </a>
+          </li>
+
+          <li class="page-footer__container-item">
+            <a class="page-footer__container-link" href="#">
+              Ипотечный калькулятор
+            </a>
+          </li>
+
+          <li class="page-footer__container-item">
+            <a class="page-footer__container-link" href="#">
+              Ответы на вопросы
+            </a>
+          </li>
+        </ul>
+
+        <ul class="page-footer__container-list-second column">
+          <li class="page-footer__container-item">
+            <a class="page-footer__container-link" href="#">
+              Контакты
+            </a>
+          </li>
+
+          <li class="page-footer__container-item">
+            <a class="page-footer__container-link" href="#">
+              Обратная связь
+            </a>
+          </li>
+
+          <li class="page-footer__container-item">
+            <a class="page-footer__container-link" href="#">
+              Мы на YouTube
+            </a>
+          </li>
+
+          <li class="page-footer__container-item">
+            <a class="page-footer__container-link" href="#">
+              Конфиденциальность
+            </a>
+          </li>
+        </ul>
+
+        <ul class="page-footer__container-socials-list-first column">
+          <li class="page-footer__container-socials-item">
+            <a class="page-footer__container-socials-link social-link" href="tel: +7(423)2919990">
+              <img src="img/logo-phone.svg" width="56" height="56" alt=" Ссылка на номер телефона">
+              <p class="page-footer__container-socials-upper-name upper-name">+7 (423) 291-99-90</p>
+              <p class="page-footer__container-socials-lower-name lower-name">Без выходных · с 10:00 до 19:00</p>
+            </a>
+          </li>
+
+          <li class="page-footer__container-socials-item">
+            <a class="page-footer__container-socials-link social-link" href="#">
+              <img src="img/logo-telegram.svg" width="56" height="56" alt=" Ссылка на мессенджеры">
+              <p class="page-footer__container-socials-upper-name upper-name">WhatsApp / Telegram</p>
+              <p class="page-footer__container-socials-lower-name lower-name">Написать в мессенджеры</p>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="page-footer__container-socials-list-second column">
+          <li class="page-footer__container-socials-item">
+            <a class="page-footer__container-socials-link social-link" href="mailto: whitedevelopment@mail.ru">
+              <img src="img/logo-mail.svg" width="56" height="56" alt=" Ссылка на почту">
+              <p class="page-footer__container-socials-upper-name upper-name">whitedevelopment@mail.ru</p>
+              <p class="page-footer__container-socials-lower-name lower-name">Email для всех запросов</p>
+            </a>
+          </li>
+
+          <li class="page-footer__container-socials-item">
+            <a class="page-footer__container-socials-link social-link" href="#">
+              <img src="img/logo-inst.svg" width="56" height="56" alt=" Ссылка на Инстаграм">
+              <p class="page-footer__container-socials-upper-name upper-name">Instagram</p>
+              <p class="page-footer__container-socials-lower-name lower-name">Перейти в профиль</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__itome">
+        <a href="https://itome.online/">
+          <span>Сделано с</span>
+          <img src="img/icon-heart.svg" width="19" height="17" alt="С любовью">
+          <span>в #айтуми</span>
+        </a>
+      </div>
     </footer>
   </body>
 </html>
