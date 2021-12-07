@@ -126,7 +126,7 @@
 .page__body {
   margin: 0 auto;
   color: var(--dark-grey);
-  background-color: var(--bg-grey-1);
+  background-color: var(--white);
   font-size: 18px;
 }
 
@@ -159,6 +159,11 @@ li, p {
   margin: 0;
 }
 
+span {
+  font-weight: 500;
+  color: var(--black);
+}
+
 .block-title {
   font-family: 'Stem',  Arial, sans-serif;
   font-size: 60px;
@@ -178,6 +183,7 @@ li, p {
   font-size: 18px;
   line-height: 1em;
   position: relative;
+  top: 50px;
 }
 
 .page-header__wrapper {
@@ -258,6 +264,10 @@ li, p {
   color: var(--white);
 }
 
+.promo-block__wrapper {
+  padding-bottom: 135px;
+}
+
 .promo-block::before {
   display: block;
   content: "";
@@ -266,7 +276,7 @@ li, p {
   height: 1030px;
   background-image: url("img/main-pic-filter.jpg");
   background-repeat: no-repeat;
-  background-position-x: 50%;
+  background-size: cover;
   z-index: -2;
   top: 0;
 }
@@ -276,10 +286,18 @@ li, p {
   font-size: 60px;
   line-height: 70px;
   font-weight: 900;
+  max-width: 650px;
+  margin-top: 93px;
+  margin-bottom: 55px;
+}
+
+.promo-block p {
+  max-width: 47%;
 }
 
 .promo-block__upper-description {
   color: var(--add-grey);
+  margin-bottom: 55px;
 }
 
 .promo-block span {
@@ -290,58 +308,217 @@ li, p {
 .promo-block__links {
   font-family: 'Averta';
   font-weight: 500;
+  font-size: 18px;
   line-height: 24px;
   color: var(--white);
+  margin-top: 70px;
 }
 
 .button-blue {
   background-color: var(--blue);
   color: var(--white);
-  padding: 1em 2.25em;
+  padding: 17.5px 45px;
   border-radius: 12px;
+  font-family: 'Averta';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.promo-block__links-find-apart {
+  padding: 17px 45px;
+  border: 1px solid var(--white);
+  border-radius: 12px;
+  margin-left: 24px;
+}
 
 
 /* чем занимается компания */
 
+.about-us-block__wrapper {
+  padding: 180px 0;
+  position: relative;
+}
 
+.about-us-block__wrapper::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 340px;
+  height: 666px;
+  background-image: url("img/phone-pic.png");
+  background-repeat: no-repeat;
+  left: 68%;
+  top: 70px;
+}
+
+.about-us-block__wrapper::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 562px;
+  height: 562px;
+  border-radius: 50%;
+  background: var(--bg-grey-2);
+  left: 62%;
+  top: 115px;
+  z-index: -2;
+}
+
+.about-us-block__title {
+  margin-bottom: 30px;
+}
+
+.about-us-block p {
+  font-family: 'Museo';
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--dark-grey);
+  max-width: 564px;
+}
+
+.about-us-block__lower-description {
+  margin-top: 47px;
+  margin-bottom: 60px;
+}
 
 /* основная инфа по компании */
 
+.info-block__wrapper {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 161px;
+}
 
+.info-block__options {
+  display: flex;
+  margin-right: auto;
+}
 
+.info-block__options-link {
+  padding: 2em 2.25vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-block__options-link:hover {
+  box-shadow: 0px 0px 108px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+}
+
+.info-block__options-link:hover .info-block__options-link-btn {
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+}
+
+.info-block__options-link img {
+  margin-bottom: 48px;
+}
+
+.info-block__options-link-title {
+  font-family: "Stem";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+  color: var(--black);
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.info-block__options-link-desc {
+  max-width: 300px;
+  margin-bottom: 41px;
+  font-family: 'Museo';
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--grey);
+}
+
+.info-block__options-link-btn {
+  padding: 17px 45px;
+  border: 1px solid var(--add-grey);
+  border-radius: 12px;
+  font-family: 'Averta';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.info-block__description {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.info-block__description-title {
+  margin-bottom: 40px;
+}
+
+.info-block__description p {
+  font-family: 'Museo';
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--dark-grey);
+}
+
+.info-block__description-middle {
+  margin: 48px 0;
+}
+
+.info-block__description-links {
+  font-family: 'Averta';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+  cursor: pointer;
+  color: var(--blue);
+  margin-top: 45px;
+}
+
+.info-block__description-phone {
+  margin-right: 64px;
+}
 
 /* преимущества */
 
+.advantages-block__wrapper {
+  background-color: var(--black);
+  border-radius: 20px;
+  width: 90vw;
+}
+
+.advantages-block__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 85px 65px;
+}
+
+.advantages-block__item {
+  padding-left: 100px;
+}
 
 
+.advantages-block__item-title {
+  font-family: 'Stem';
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  color: var(--white);
+  margin-bottom: 13px;
+}
+
+.advantages-block__item-desc {
+  font-family: 'Museo';
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--add-grey);
+}
 
 /* подбор квартиры (форма) */
 
@@ -360,3 +537,47 @@ li, p {
 
 
 /* футер */
+
+.page-footer__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 68px 0;
+}
+
+.page-footer__container-info {
+  font-family: 'Museo';
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 33px;
+}
+
+.page-footer__container-item {
+  font-family: 'Averta';
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.page-footer__container-item:not(:nth-child(4)) {
+  margin-bottom: 24px;
+}
+
+.page-footer__container-socials-link {
+  gap: 4px 8px;
+}
+
+.page-footer__itome {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid var(--add-grey);
+}
+
+.page-footer__itome a {
+  font-family: 'Museo';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 47px 0;
+
+}
