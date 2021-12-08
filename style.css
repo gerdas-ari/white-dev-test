@@ -160,7 +160,7 @@ li, p {
 }
 
 span {
-  font-weight: 500;
+  font-weight: 700;
   color: var(--black);
 }
 
@@ -224,7 +224,7 @@ span {
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: 1fr 1fr;
-  gap: 4px 0;
+  gap: 4px 10px;
 }
 
 .social-link img {
@@ -344,25 +344,12 @@ span {
   display: block;
   content: "";
   position: absolute;
-  width: 340px;
+  width: 562px;
   height: 666px;
   background-image: url("img/phone-pic.png");
   background-repeat: no-repeat;
-  left: 68%;
+  left: 60%;
   top: 70px;
-}
-
-.about-us-block__wrapper::after {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 562px;
-  height: 562px;
-  border-radius: 50%;
-  background: var(--bg-grey-2);
-  left: 62%;
-  top: 115px;
-  z-index: -2;
 }
 
 .about-us-block__title {
@@ -386,20 +373,24 @@ span {
 /* основная инфа по компании */
 
 .info-block__wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding-top: 20px;
   padding-bottom: 161px;
 }
 
 .info-block__options {
-  display: flex;
-  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
 }
 
 .info-block__options-link {
   padding: 2em 2.25vw;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  max-height: 495px;
 }
 
 .info-block__options-link:hover {
@@ -423,13 +414,13 @@ span {
   font-size: 28px;
   line-height: 28px;
   color: var(--black);
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   white-space: nowrap;
 }
 
 .info-block__options-link-desc {
   max-width: 300px;
-  margin-bottom: 41px;
+  margin-bottom: 50px;
   font-family: 'Museo';
   font-weight: 300;
   font-size: 18px;
@@ -452,6 +443,7 @@ span {
   display: flex;
   flex-direction: column;
   max-width: 500px;
+  margin-left: 20%;
 }
 
 .info-block__description-title {
@@ -482,6 +474,35 @@ span {
 
 .info-block__description-phone {
   margin-right: 64px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.info-block__description-phone::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-image: url("img/blue-phone.svg");
+  background-repeat: no-repeat;
+  top: 3px;
+}
+
+.info-block__description-contacts {
+  position: relative;
+}
+
+.info-block__description-contacts::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 15px;
+  background-image: url("img/blue-arrow.svg");
+  background-repeat: no-repeat;
+  top: 5px;
+  right: -25px;
 }
 
 /* преимущества */
@@ -500,8 +521,28 @@ span {
 
 .advantages-block__item {
   padding-left: 100px;
+  position: relative;
 }
 
+.advantages-block__item::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background-image: url("img/icon-bank.svg");
+  background-repeat: no-repeat;
+  left: 0;
+  top: 2px;
+}
+
+.second-item::before {
+  background-image: url("img/icon-no-money.svg");
+}
+
+.third-item::before {
+  background-image: url("img/icon-free-booking.svg");
+}
 
 .advantages-block__item-title {
   font-family: 'Stem';
@@ -523,25 +564,239 @@ span {
 /* подбор квартиры (форма) */
 
 
+.form-block {
+  position: relative;
+  z-index: 4;
+  background-color: var(--white);
+}
 
+.form-block__wrapper {
+  padding: 200px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-block__desc-info {
+  font-family: 'Museo';
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--dark-grey);
+
+  margin: 30px 0 45px 0;
+}
+
+.form-block__desc-contact {
+  width: fit-content;
+  gap: 12px 30px;
+}
+
+.form-block__desc-contact-img {
+  align-self: center;
+}
+
+.form-block__desc-contact-phone {
+  font-family: 'Stem';
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+}
+
+.form-block__desc-contact-info {
+  font-family: 'Museo';
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.form-block__data {
+  padding: 48px 80px 48px 48px;
+  box-shadow: 0px 0px 108px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+}
+
+.form-block__data-title {
+  font-family: 'Stem';
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+
+  padding-bottom: 34px;
+}
 
 /* банки-партнёры */
 
+.bank-partners-block {
+  background-color: var(--bg-grey-2);
+  position: relative;
+}
 
+.bank-partners-block__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 160px;
+}
 
+.bank-partners-block__slider {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
 
+  position: absolute;
+  top: 6%;
+  left: -2%;
+  width: 38vw;
+  height: 100%;
+  transform: rotate(7deg);
+  overflow: hidden;
+}
+
+.bank-partners-block__slider-item {
+  width: 100%;
+  height: 240px;
+  background-color: var(--white);
+  border-radius: 30px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+}
+
+.bank-partners-block__slider-item:not(:last-child) {
+  margin-bottom: 34px;
+}
+
+.bank-partners-block__info {
+  grid-column: 2/-1;
+  padding: 206px 0;
+}
+
+.bank-partners-block__info-title {
+  margin-bottom: 40px;
+}
+
+.bank-partners-block__info p {
+  font-family: 'Museo';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--dark-grey);
+}
+
+.bank-partners-block__info-desc-lower {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
 
 /* застройщики */
 
+.build-partners-block__wrapper {
+  padding: 117px 0 165px 0;
+  position: relative;
+}
 
+.build-partners-block__info-title {
+  margin-bottom: 25px;
+}
 
+.build-partners-block__info-desc {
+  font-family: 'Museo';
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.build-partners-block__arrows {
+  max-width: fit-content;
+  position: absolute;
+  right: 0;
+  top: 170px;
+}
+
+.build-partners-block__left-arrow {
+  background-image: url('img/blue-btn-left.svg');
+  background-size: 48px 48px;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  margin-right: 24px;
+}
+
+.build-partners-block__right-arrow {
+  background-image: url('img/blue-btn-right.svg');
+  background-size: 48px 48px;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.build-partners-block__list {
+  padding: 89px 0 60px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.build-partners-block__item {
+  padding: 48px 58px 48px 48px;
+  border: 1px solid var(--add-grey);
+  border-radius: 24px;
+  max-width: 416px;
+  height: 200px;
+  width: 350px;
+}
+
+.build-partners-block__item-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+}
+
+.build-partners-block__item-name {
+  font-family: 'Averta';
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 28px;
+  position: relative;
+}
+
+.build-partners-block__item-name::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 16px;
+  background-image: url("img/blue-arrow.svg");
+  background-repeat: no-repeat;
+  top: 8px;
+  right: 0;
+}
+
+.build-partners-block__scrollbar {
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 12px;
+  border-radius: 16px;
+}
+
+.build-partners-block__scrollbar-drag {
+  width: 20%;
+  background-color: #d6d6d6;
+  height: 12px;
+  border-radius: 16px;
+  cursor: pointer;
+}
 
 /* футер */
 
 .page-footer__container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: max-content max-content max-content max-content max-content;
   padding: 68px 0;
+  justify-content: space-between;
+  border-top: 1px solid var(--add-grey);
+
 }
 
 .page-footer__container-info {
@@ -549,7 +804,8 @@ span {
   font-weight: 300;
   font-size: 20px;
   line-height: 30px;
-  margin-top: 33px;
+  margin-top: 25px;
+  max-width: 320px;
 }
 
 .page-footer__container-item {
@@ -557,10 +813,31 @@ span {
   font-weight: 300;
   font-size: 18px;
   line-height: 18px;
+  position: relative;
+}
+
+.page-footer__container-item::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 12px;
+  background-image: url("img/arrow.svg");
+  background-repeat: no-repeat;
+  left: -23px;
+  top: 5px;
 }
 
 .page-footer__container-item:not(:nth-child(4)) {
-  margin-bottom: 24px;
+  margin-bottom: 25px;
+}
+
+.page-footer__container-socials-list-first,
+.page-footer__container-socials-list-second {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .page-footer__container-socials-link {
