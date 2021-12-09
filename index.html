@@ -176,38 +176,55 @@
           <form class="form-block__data">
             <p class="form-block__data-title">Подобрать квартиру</p>
             <div class="form-block__data-group">
-              <div class="form-block__data-cell">
-                Кол-во комнат
+              <div class="form-block__data-column">
+                <div class="form-block__data-cell">
+                  <input type="hidden" name="rooms">
+                  <p class="form-block__data-cell-name">Кол-во комнат</p>
+                  <img class="form-block__data-cell-icon" src="img/black-down-arrow.svg" width="15" height="8">
+                </div>
+                <div class="form-block__data-cell">
+                  <input type="hidden" name="area">
+                  <p class="form-block__data-cell-name">Площадь</p>
+                  <img class="form-block__data-cell-icon" src="img/black-down-arrow.svg" width="15" height="8">
+                </div>
+                <div class="form-block__data-cell">
+                  <input type="hidden" name="distict">
+                  <p class="form-block__data-cell-name">Район</p>
+                  <img class="form-block__data-cell-icon" src="img/black-down-arrow.svg" width="15" height="8">
+                </div>
+                <div class="form-block__data-cell">
+                  <input type="hidden" name="deadline">
+                  <p class="form-block__data-cell-name">Срок сдачи</p>
+                  <img class="form-block__data-cell-icon" src="img/black-down-arrow.svg" width="15" height="8">
+                </div>
+                <div class="form-block__data-cell privacy-cell">
+                  <input class="visually-hidden privacy-cell__input" type="checkbox" name="privacy" id="privacy-data" checked>
+                  <label for="privacy-data">Даю согласие на обработку моих данных</label>
+                </div>
               </div>
-              <div class="form-block__data-cell">
-                Площадь
-              </div>
-              <div class="form-block__data-cell">
-                Район
-              </div>
-              <div class="form-block__data-cell">
-                Срок сдачи
-              </div>
-              <div class="form-block__data-cell">
-                Стоимость
-              </div>
-              <div class="form-block__data-cell">
-                Ваше ФИО
-              </div>
-              <div class="form-block__data-cell">
-                Номер телефона
-              </div>
-              <div class="form-block__data-cell">
-                Как будете платить?
+
+              <div class="form-block__data-column">
+                <div class="form-block__data-cell">
+                  <input type="hidden" name="price">
+                  <p class="form-block__data-cell-name">Стоимость</p>
+                  <img class="form-block__data-cell-icon" src="img/black-down-arrow.svg" width="15" height="8">
+                </div>
+                <div class="form-block__data-cell">
+                  <input class="form-block__data-cell-input" type="text" name="name" placeholder="Ваше ФИО" required>
+                </div>
+                <div class="form-block__data-cell">
+                  <input class="form-block__data-cell-input" type="tel" name="phone" placeholder="Номер телефона" required>
+                </div>
+                <div class="form-block__data-cell">
+                  <input type="hidden" name="payment">
+                  <p class="form-block__data-cell-name">Как будете платить?</p>
+                  <img class="form-block__data-cell-icon" src="img/black-down-arrow.svg" width="15" height="8">
+                </div>
+                <div class="form-block__data-cell cell-button">
+                  <a class="button-blue cell-button__blue" href="#">Подобрать</a>
+                </div>
               </div>
             </div>
-
-            <div>
-              <input type="checkbox" name="" id="">
-              <label for="">Даю согласие на обработку моих данных</label>
-            </div>
-
-            <a class="button-blue" href="#">Подобрать</a>
           </form>
         </div>
       </section>
