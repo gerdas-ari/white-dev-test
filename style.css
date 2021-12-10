@@ -364,6 +364,11 @@ span {
   margin-left: 24px;
 }
 
+.promo-block__links-find-apart:hover {
+  border: 3px solid var(--white);
+  padding: 15px 43px;
+}
+
 /* чем занимается компания */
 
 .about-us-block__wrapper {
@@ -605,6 +610,10 @@ span {
   padding: 200px 0;
   display: flex;
   justify-content: space-between;
+}
+
+.form-block__desc {
+  margin-right: 20px;
 }
 
 .form-block__desc-info {
@@ -917,13 +926,15 @@ span {
 
 /* футер */
 
+.page-footer {
+  border-top: 1px solid var(--add-grey);
+}
+
 .page-footer__container {
   display: grid;
   grid-template-columns: max-content max-content max-content max-content max-content;
   padding: 68px 0;
   justify-content: space-between;
-  border-top: 1px solid var(--add-grey);
-
 }
 
 .page-footer__container-info {
